@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 마우스 닿을 때 */
+        /* .list ul li a {} 이렇게 해도 됨 */
+        .list > ul > li > a:hover {background-color: lightgreen;}
+
+        /* input에 포커스 될 때 */
+        .inner > input:hover{background-color: lightskyblue;}
+
+        /* 눌렀을 때 */
+        .title p:active{background-color: sienna;}
+    </style>
+
+</head>
+<body>
+    
+    <div class="list">
+        <ul>
+            <li><a href="#">목록</a></li>
+            <li><a href="#">목록</a></li>
+            <li><a href="#">목록</a></li>
+        </ul>
+    </div>
+
+    <div class="inner">
+        <input type="text" placeholder="입력">
+        <input type="text" placeholder="하던지 말던지">
+    </div>
+
+    <div class="title">
+        <p>active</p>
+    </div>
+    
+
+
+
+</body>
+</html>

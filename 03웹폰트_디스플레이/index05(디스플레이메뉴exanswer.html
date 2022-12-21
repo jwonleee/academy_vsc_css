@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #header {background-color: black;
+                 color: white;
+                 text-align: center;
+        } /* 전체를 감싸고 있는 백그라운드 컬러 */
+        
+        .wrap ul li {display: inline;}
+        .wrap ul li a {
+            display: inline-block;
+            height: 100px;
+            line-height: 100px;
+            width: 100px;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .wrap ul li a:hover {
+            background-color: #777;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <header id="header"> <!-- 고유해도 되니까 id -->
+        <h3>목록만들기</h3>
+        <nav class="wrap">
+            <ul>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+</body>
+</html>

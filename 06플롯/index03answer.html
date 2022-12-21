@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .main {
+            overflow: hidden;
+            border: 1px solid #777;
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .inner {
+            float: left;
+            box-sizing: border-box;
+            width: 50.00%;
+        }
+        
+        .wrap {
+            border: 1px solid #777;
+        }
+
+        .main .inner p {margin: 0;}
+
+        .content {
+            overflow: hidden;
+            border: 1px solid black;
+            
+        }
+        .content .left {
+            float: left;
+            
+        }
+        .content .right {
+            float: right;
+        }
+
+        .content button{width: 50%;}
+
+        .control {margin-top: 50px;}
+    
+    </style>
+
+</head>
+<body>
+    
+    <h3>과제2</h3>
+    
+    <div class="main"><!-- 제일 바깥쪽 -->
+
+        <div class="inner"><!-- 사진 왼쪽 -->
+            사진
+        </div>
+
+        <div class="inner wrap"><!-- 내용 오른쪽, 클래스이름 2개 -->
+
+            <div class="write"><!-- 글작성 -->
+                <p>제목: 패딩바텀 50px</p>
+                <p>내용: 아마도</p>
+            </div>
+            
+            <div class="control">
+                <div class="content"><!-- 가격 -->
+                    <div class="left"><!-- 가격 왼쪽 -->
+                        가격
+                    </div>
+                    <div class="right"><!-- 가격 오른쪽 -->
+                        10000원
+                    </div>
+                </div>
+
+                <div class="content"><!-- 클릭 -->
+                    <!-- 버튼은 div로 담으면 안됨!!!!!!! -->
+                    <!-- 장바구니 왼쪽 -->
+                    <button type="button" class="left">장바구니</button>
+                    
+                    <!-- 구매하기 오른쪽 -->
+                    <button type="button" class="right">구매하기</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+</html>

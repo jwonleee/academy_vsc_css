@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* 주석: alt + shift + a 또는 ctrl + / */
+
+        /* * { } : 디자인 시작전에 전역으로 적용할 속성 margin and padding에 적용 */
+        b { color: blue;}
+        #a1 { color: greenyellow;} /* 아이디 */
+        .b1 { color: salmon;} /* 클래스 */
+
+        .box p {color: cornflowerblue;} /* 모든자식 */
+        .box > p {color: seagreen;} /* 바로 밑에 있는(직속,직계) 자식들에게 줌 */
+
+        .box2 li, /* .box li, p {}를 하면 모든 p태그를 말하는 것이라서 안 됨 */
+        .box2 p {color:purple;}
+
+        .forms input[type=text] {background-color: lightgrey;}       
+
+    </style>
+
+</head>
+<body>
+    
+    <p>선택자</p>
+    <b>선택자</b>
+
+    <p id="a1">아이디선택자</p>
+
+    <p class="b1">클래스선택자</p>
+
+    <p class="b1">클래스선택자</p>
+
+
+    <div class="box">
+
+        <p> 하위선택자 꺽쇠 </p>
+        <p> 하위선택자 꺽쇠 </p>
+
+        <form>
+            <p> 하위선택자 공백 </p>
+        </form>
+
+    </div>
+
+    <div class="box2">
+        <ul>
+            <li>목록</li>
+            <li>목록</li>
+            <li>목록</li>
+        </ul>
+
+        <div>
+            <p>내용...</p>
+        </div>
+    </div>
+
+    <form class="forms">
+        <input type="text">
+        <input type="submit">
+    </form>
+
+    
+</body>
+</html>

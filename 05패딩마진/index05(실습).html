@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {padding: 0; margin:0; list-style: none;}
+        img {height: auto; max-width: 100%;} /* 이미지 자체의 비율 유지 */
+
+        #menu {
+            background-color: rgb(50, 50, 50);
+            text-align: center;
+        }
+        
+        .wrap li { display: inline; }
+        
+        .wrap li a {
+            box-sizing: border-box;
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .wrap li a:hover {
+            
+            border-bottom: 3px solid white;
+        }
+
+        .sec {
+            width: 1500px;
+            height: 700px;
+            padding: 50px 80px; 
+            margin: 0 auto;
+        }
+
+        .box {
+            border: 1px solid black;
+            padding: 30px;
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    <!-- 호버가 border-bottom -->
+
+    <header id="menu">
+        <ul class="wrap">
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+            <li><a href="#">메뉴</a></li>
+        </ul>
+    </header>
+
+
+    <article>
+        <img src="img/head.jpg" alt="배너1">
+    </article>
+
+
+    <section class="sec">
+        <h3>오늘의 발견</h3>
+        <div class="box">
+            컨텐츠 내용<br>
+            컨텐츠 내용<br>
+            컨텐츠 내용<br>
+            컨텐츠 내용<br>
+            컨텐츠 내용<br>
+            컨텐츠 내용<br>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .main {
+            overflow: hidden;
+            border: 1px solid #777;
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .content1 {
+            float: left;
+            box-sizing: border-box;
+            
+        }
+        .content2 {
+            float: right;
+            box-sizing: border-box;
+            width: 50.00%;
+            border: 1px solid #777;
+        }
+
+        .write {
+            border: 1px solid #777;
+            /* display: block; */
+            padding-bottom: 50px;
+        }
+
+        .money {
+            overflow: hidden;
+            border: 1px solid black;
+            
+        }
+        .money .moneyleft {
+            float: left;
+            
+        }
+        .money .moneyright {
+            float: right;
+        }
+
+        /* main에서 width가 잡혀 있어서 따로 주지 않아도 float 가능 */
+        /* .click{
+            overflow: hidden;
+            width: 400px;
+        } */
+
+        .click .clickleft{
+            float: left;
+            width: 50.000%;
+            box-sizing: border-box;
+        }
+        .click .clickright{
+            float: right;
+            width: 50.000%;
+            box-sizing: border-box;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h3>과제2</h3>
+    
+    <div class="main"><!-- 제일 바깥쪽 -->
+
+        <div class="content1"><!-- 사진 왼쪽 -->
+            사진
+        </div>
+
+        <div class="content2"><!-- 내용 오른쪽 -->
+
+            <div class="write"><!-- 글작성 -->
+                제목: 패딩바텀 50px<br>
+                내용: 아마도
+            </div>
+
+            <div class="money"><!-- 가격 -->
+                <div class="moneyleft"><!-- 가격 왼쪽 -->
+                    가격
+                </div>
+                <div class="moneyright"><!-- 가격 오른쪽 -->
+                    10000원
+                </div>
+            </div>
+
+            <div class="click"><!-- 클릭 -->
+                <!-- 버튼은 div로 담으면 안됨!!!!!!! -->
+                <!-- 장바구니 왼쪽 -->
+                <button type="button" class="clickleft">장바구니</button>
+                
+                <!-- 구매하기 오른쪽 -->
+                <button type="button" class="clickright">구매하기</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+</body>
+</html>

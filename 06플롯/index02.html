@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .list { /* 부모한테 무조건 overflow:hidden; */
+            overflow: hidden;
+            width: 800px;
+            margin: 0 auto;
+            border: 1px solid #777
+        }
+        .list .inner{
+            float: left;
+            width: 25.0000%; /* 100기준 정확히 4등분 시킬거니까 */
+            border: 1px solid #777;
+            box-sizing: border-box; /* 이거 안하면 넘어가면서 상자 떨어짐 */
+        }
+
+        .content {
+            overflow: hidden;
+        }
+        .content .left {
+            float: left;
+        }
+        .content .right {
+            float: right;
+        }
+        .content .left span {
+            display: block;
+        }
+
+
+
+    </style>
+
+<body>
+    
+    
+    <div class="list">
+
+        <div class="inner"> <!-- inner가 총 4개 -->
+            <img src="img/1.png" alt="이미지">
+
+            <div class="content"> <!-- overflow -->
+                <div class="left"> <!-- float left -->
+                    <span>왼쪽</span> <!-- span은 inline이어서 아래로 안 내려가니까 display:block 처리 -->
+                    <span>왼쪽</span>
+                    <span>왼쪽</span>
+                </div>
+                <div class="right"><!-- float right -->
+                    <span>오른쪽</span>
+                </div>
+
+                <div style="clear:both;"> <!-- float의 영향을 받지않고, 그 이후에는 원래 블록 성질 따라감 -->
+                    탑쌓기해제
+                </div>
+                <div>
+                    플롯의 영향을 받지 않음
+                </div>
+
+            </div>
+
+            <!--
+            <div>
+                 탑쌓기해제
+            </div>
+            -->
+
+        </div>
+
+
+        <div class="inner"> <!-- inner가 총 4개 -->
+            <img src="img/1.png" alt="이미지">
+
+            <div class="content"> <!-- overflow -->
+                <div class="left"> <!-- float left -->
+                    <span>왼쪽</span> <!-- span은 inline이어서 아래로 안 내려가니까 display:block 처리 -->
+                    <span>왼쪽</span>
+                    <span>왼쪽</span>
+                </div>
+                <div class="right"><!-- float right -->
+                    <span>오른쪽</span>
+                </div>
+
+                <div style="clear:both;"> <!-- float의 영향을 받지않고, 그 이후에는 원래 블록 성질 따라감 -->
+                    탑쌓기해제
+                </div>
+                <div>
+                    플롯의 영향을 받지 않음
+                </div>
+
+            </div>
+
+            <!--
+            <div>
+                 탑쌓기해제
+            </div>
+            -->
+
+        </div>
+
+
+        <div class="inner"> <!-- inner가 총 4개 -->
+            <img src="img/1.png" alt="이미지">
+
+            <div class="content"> <!-- overflow -->
+                <div class="left"> <!-- float left -->
+                    <span>왼쪽</span> <!-- span은 inline이어서 아래로 안 내려가니까 display:block 처리 -->
+                    <span>왼쪽</span>
+                    <span>왼쪽</span>
+                </div>
+                <div class="right"><!-- float right -->
+                    <span>오른쪽</span>
+                </div>
+
+                <div style="clear:both;"> <!-- float의 영향을 받지않고, 그 이후에는 원래 블록 성질 따라감 -->
+                    탑쌓기해제
+                </div>
+                <div>
+                    플롯의 영향을 받지 않음
+                </div>
+
+            </div>
+
+            <!--
+            <div>
+                 탑쌓기해제
+            </div>
+            -->
+
+        </div>
+
+
+        <div class="inner"> <!-- inner가 총 4개 -->
+            <img src="img/1.png" alt="이미지">
+
+            <div class="content"> <!-- overflow -->
+                <div class="left"> <!-- float left -->
+                    <span>왼쪽</span> <!-- span은 inline이어서 아래로 안 내려가니까 display:block 처리 -->
+                    <span>왼쪽</span>
+                    <span>왼쪽</span>
+                </div>
+                <div class="right"><!-- float right -->
+                    <span>오른쪽</span>
+                </div>
+
+                <div style="clear:both;"> <!-- float의 영향을 받지않고, 그 이후에는 원래 블록 성질 따라감 -->
+                    탑쌓기해제
+                </div>
+                <div>
+                    플롯의 영향을 받지 않음
+                </div>
+
+            </div>
+
+            <!--
+            <div>
+                 탑쌓기해제
+            </div>
+            -->
+
+        </div>
+
+
+    </div>
+
+
+</body>
+</html>

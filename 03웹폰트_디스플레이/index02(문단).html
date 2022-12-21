@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .tx {color: cadetblue;
+             letter-spacing: -5px; /* 글자간격 */
+             text-align: right; /* 글자정렬: 블럭요소에서 사용 */
+            }
+        
+        /* p태그에 정렬줘도 안 먹힘 */
+        .tx1 {vertical-align: top;}
+        
+        /* 기준이 되는(img)! 나란히 배치된 요소에 들어감 */
+        .tx1 img{vertical-align: middle;}
+        
+        /* 기준이 되는 요소가 없을 때 수직정렬 */
+        /* 한줄만 있을 때 height, line-height 맞춰주면 중앙으로 정렬됨 */
+        .tx2 {
+            border: 1px solid #777;
+            height: 100px;
+            line-height: 100px; /* 줄간간격 */
+        }
+
+    </style>
+</head>
+<body>
+    
+    <p class="tx">
+        안녕하세요
+    </p>
+
+    <p class="tx1">
+        <img src="img/css.png" alt="이미지">
+        버티칼 얼라인
+    </p>
+
+    <p class="tx2">
+        기준이 되는 요소가 없을 때 수직정렬
+    </p>
+
+
+</body>
+</html>
