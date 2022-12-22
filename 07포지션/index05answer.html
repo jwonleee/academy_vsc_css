@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {margin: 0; padding: 0; list-style: none;}
+
+        .wrap {
+            margin: 0 auto;
+            border: 1px solid #777;
+            width: 500px;
+            padding: 20px;
+            position: relative;
+        }
+
+        .wrap-img {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .wrap .wrap-content {
+            padding-left: 70px;
+            overflow: hidden;
+        }
+
+        .wrap-content textarea {
+            width: 100%;
+            height: 200px;
+            box-sizing: border-box; /* textarea에 기본적으로 border가 들어가 있으니까 box-sizing 넣어줘야 함 */
+            resize: none; /* textarea 움직이기 방지 */
+        }
+
+        .wrap-content .left {
+            float: left;            
+        }
+
+        .wrap-content .right {
+            float: right;
+        }
+
+        .left input { /* input은 inline → block으로 바꿔주면 내려감, input에서 조정해줘야 함 */
+            display: block;
+            margin-top: 5px;
+        }
+
+        button {
+            width: 100px;
+        }
+
+        .wrap-img img {
+            width: 50px;
+        }
+
+        /* .wrap .btn .right { 위에서 썼던 position:right 그대로 사용 가능
+            float: right;
+            box-sizing: border-box;
+        } */
+
+        /* .content2 { 두번째 제목, 내용부분 class=content2 안 만들어도 됨
+            float: left;
+        } */
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="wrap"> <!-- margin: 0 auto -->
+        <div class="wrap-img"> <!-- 포지션 -->
+            <img src="img/1.png" alt="로고">
+        </div>
+        
+        <div class="wrap-content"> <!-- 패딩 left -->
+            <textarea name="hint" id="text"></textarea>
+            
+            <div class="left"><!-- float: left -->
+                <input type="text">
+                <input type="text">
+            </div>
+            
+            <!-- float:right -->
+            <button type="butto" class="right">등록</button>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <div class="wrap-img">
+            <img src="img/1.png" alt="로고">
+        </div>
+
+        <div class="wrap-content">
+            <div class="left">
+                <h3>제목</h3>
+                <p>내용</p>
+            </div>
+            
+            <button type="button" class="right">삭제</button>
+            <button type="button" class="right">수정</button>
+        </div>
+
+    </div>
+        
+
+</body>
+</html>

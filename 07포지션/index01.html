@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {margin: 0; padding: 0;}
+        .list {
+            width: 50%; /* body영역 기준 50%임 */
+            margin: 0 auto;
+            border: 1px solid #777;
+        }
+        
+        p {height: 100px;}
+
+        /* 아무것도 안주면 body기준인데, 부모영역(기반으로 잡고 싶은곳)에 relative를 주면 그 영역을 기준으로 바뀜 */
+        .content {
+            position: relative;
+        }
+
+        .item1 {background-color: rgb(180, 235, 180);}
+        .item2 {
+            background-color: rgb(255, 203, 203);
+            /* 포지션 absolute를 적용하면 부모에 relative가 들어갑니다. (들어가지 않으면 위치가 body 기준이 됨) */
+            /* 포지션을 적용하면 top, bottom 중 1개, left, right 중 1개를 선택해서 위치조정 */
+            position: absolute;
+            top: 10px;
+            left: 30px;
+            width: 50px;
+            height: 50px;
+        }
+        .item3 {background-color: rgb(171, 217, 247);}
+
+    </style>
+
+</head>
+<body>
+    <div class="list">
+        <div class="content">
+            <p class="item1">포지션</p>
+            <p class="item2">포지션</p>
+            <p class="item3">포지션</p>
+        </div>
+    </div>
+</body>
+</html>

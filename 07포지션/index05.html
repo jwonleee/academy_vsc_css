@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {margin: 0; padding: 0; list-style: none;}
+
+        .main {
+            margin: 0 auto;
+            position: relative;
+            border: 2px solid #777;
+            width: 500px;
+            padding: 20px;
+            /* line-height: 400px; */
+            box-sizing: border-box;
+        }
+
+        .main .pos {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .wrap {
+            padding-left: 120px;
+            overflow: hidden;
+        }
+
+        .wrap .left {
+            float: left;
+            box-sizing: border-box;
+        }
+
+        .wrap .right {
+            float: right;
+        }
+
+        .left input {
+            display: block;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="main"> <!-- margin: 0 auto -->
+        <div class="pos"> <!-- 포지션 -->
+            <img src="img/1.png" alt="로고">
+        </div>
+        
+        <div class="wrap"> <!-- 패딩 left -->
+            <textarea name="hint" id="text" cols="40" rows="12"></textarea>
+            
+            <div class="left"><!-- float: left -->
+                <input type="text">
+                <input type="text">
+            </div>
+            
+            <!-- float:right -->
+            <button type="butto" class="right">등록</button>
+        </div>
+    </div>
+        
+
+</body>
+</html>
