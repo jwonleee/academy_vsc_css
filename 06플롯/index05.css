@@ -1,0 +1,48 @@
+* {margin: 0; padding: 0; list-style: none; box-sizing: border-box;}
+
+.wrap {
+    width: 1020px;
+    margin: 0 auto;
+}
+
+.conts {
+    overflow: hidden;
+}
+
+.conts .list_wrap {width: 480px; float: left; border: 1px solid #777; margin-left: 8px; padding: 0 10px;}
+.conts .slide_wrap {width: 236px; height:310px; float: left; border: 1px solid #777; margin-left: 8px;}
+.conts .user_wrap {width: 280px; float: left;}
+
+.conts .list_wrap ul {overflow: hidden;}
+.conts .list_wrap ul li {float: left;
+                        width: 33.3333%;
+                        height: 155px;
+                        border: 1px solid #777;
+                        box-sizing: border-box;}
+
+.user_wrap .login_wrap {
+    border: 1px solid #777;
+    height: 147px;
+    margin-bottom: 8px;
+}
+
+.user_wrap .promo_wrap {
+    border: 1px solid #777;
+    height: 155px;
+    box-sizing: border-box;
+}
+
+.login_wrap .top{overflow: hidden; margin-top: 30px;}
+.login_wrap .top .left{float: left; font-size: 13px; color: #777;} 
+.login_wrap .top .right{float: right; font-size: 13px; color: #777;} 
+
+.list_wrap .login_btn {
+    background-color: darkseagreen;
+    width: 100%; /* 부모영역의 100% */
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: 600px;
+    padding: 20px 0px;
+    margin-top: 10px;
+}
