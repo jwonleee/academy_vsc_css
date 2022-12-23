@@ -1,0 +1,214 @@
+* {margin: 0; padding: 0; list-style: none;}
+a {text-decoration: none;}
+img {max-width: 100%; height: auto;}
+
+#header {border-top: 3px solid #00d344;}
+#header .wrap {border-bottom: 1px solid #999;}
+#header .wrap .top {margin: 0 auto; width: 1008px; overflow: hidden;}
+.wrap .top .top_left{float:left; padding: 11px 7px; color: #999; font-weight: 700; font-size: 13px;}
+.wrap .top .top_left:hover{color:#00d344;}
+.wrap .top .top_right{float: right;}
+
+
+.top_right ul li {display: inline; border-left: 1px solid #999;}
+.top_right ul li a{
+    display: inline-block;
+    padding: 11px 7px;
+    color: #999;
+    font-weight: 700;
+    font-size: 13px;
+}
+.top_right ul li a:hover{color: black;}
+
+.wrap .mid {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 1008px;
+}
+
+.wrap .mid .logo {
+    float: left;
+}
+.wrap .mid .search  {
+    float: left;
+    background-image: url('img/melon_search.png');
+    width: 330px;
+    height: 40px;
+    margin: 36px 0 0 11px;
+    overflow: hidden;
+    border: none;
+}
+.wrap .mid .search input {
+    margin: 7px 0 0 18px;
+    width: 260px;
+    height: 25px;
+    line-height: 25px;
+    border: none;
+    float: left;
+}
+.wrap .mid .search button {
+    float: right;
+    background-image: url('img/melon_btn.png');
+    height: 40px;
+    width: 45px;
+    border: none;
+    margin: 0;
+    background-color: white;
+}
+.wrap .mid .ad {
+    float: right;
+    margin: 10px 0 0;
+}
+
+.wrap .bottom {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 1008px;
+    height: 40px;
+}
+.wrap .bottom .main_menu {
+    float: left;
+    box-sizing: border-box;
+}
+.wrap .bottom ul li {display: inline;}
+.wrap .bottom ul li a {
+    display: inline-block;
+    width: 75px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;  
+}
+.wrap .bottom ul li a:hover {
+    color: #00d344;
+}
+.wrap .bottom .sub_menu {
+    float: right;
+}
+ /**************** section ****************/
+
+#section .wrap {
+    width: 1008px;
+    margin: 0 auto;
+}
+#section .conts {
+    overflow: hidden;
+}
+#section .conts .list_wrap {width: 480px; float: left;}
+#section .conts .slide_wrap {width: 236px; float: left; margin-left: 4px;}
+#section .conts .user_wrap {width: 280px; float: left; border: 1px; margin-left: 8px;}
+
+#section .conts .list_wrap ul {overflow: hidden;}
+#section .conts .list_wrap ul li {
+    float: left; 
+    width: 33.3333%; 
+    height: 159px; 
+    /* border: 1px solid #777; */
+    box-sizing: border-box;
+    position: relative;
+}
+
+#section .conts .list_wrap ul li a {position: relative;}
+#section .conts .list_wrap ul li .singer {
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    height: 30px;
+    font-size: 13px;
+    line-height: 30px;
+}
+
+#section .conts .list_wrap ul li .hover_cont {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    background-color: rgb(0,0,0,0.7);
+    text-align: center;
+    width: 156px;/* 부모영역기반, li의 너비만큼 따라감 */
+    height: 156px;/* 부모영역기반, li의 너비만큼 따라감 */
+    text-align: center;
+    opacity: 0; /* 투명도 */
+    transition: opacity 0.25s ease-in-out;
+}
+#section .conts .list_wrap ul li:hover .hover_cont{
+    opacity: 1; /* 호버 올라올 때 자식의 투명도를 바꿔줌 */
+}
+
+#section .conts .list_wrap ul li .hover_cont a{
+    margin-top: 55px;
+    display: block;
+    color: #fff;
+    font-weight: 900;
+    font-size: 12px;
+}
+
+
+
+#section .user_wrap .login_wrap {
+    border: 1px solid #777;
+    height: 118px;
+    margin-bottom: 8px; 
+    padding: 0 15px;
+    
+}
+#section .user_wrap .promo_wrap {
+    /* border: 1px solid #777; 
+    height: 155px;  */
+}
+
+#section .login_wrap .top {overflow: hidden; margin-top: 30px;}
+#section .login_wrap .top .left {float: left; font-size: 13px; color: #555;}
+#section .login_wrap .top .right {float: right; font-size: 13px; color: #555;}
+#section .login_wrap .login_btn {
+    background-color: #00d344;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+#section .banner {
+    margin-top: 20px;
+}
+
+#section .hot_issue {
+    width: 702px;
+    margin-top: 20px;
+}
+#section .issue_title {
+    border-bottom: 1px solid;
+}
+#section .hot_issue .issue_title h3{
+    font-size: 20px;
+}
+#section .hot_issue .issue_title h3 span {
+    
+    font-size: 9px;
+    color: #999;
+}
+
+#section .hot_issue .issue_cont ul {overflow: hidden;}
+#section .hot_issue .issue_cont ul li {
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    width: 223px;
+    margin: 16px 0 0 16px;
+}
+
+#section .hot_issue .issue_cont ul li .inner > span{
+    margin-top: 10px;
+    display: block;
+
+}
+
