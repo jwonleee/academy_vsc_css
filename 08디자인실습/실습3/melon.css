@@ -206,7 +206,7 @@ img {max-width: 100%; height: auto;}
     margin: 16px 0 0 16px;
 }
 
-#section .hot_issue .issue_cont ul li .inner > span{
+#section .hot_issue .issue_cont ul li .inner > span{ /* < 바로 아래꺼만  */
     margin-top: 10px;
     display: block;
 

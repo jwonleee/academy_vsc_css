@@ -10,34 +10,38 @@
         * {padding: 0; margin:0; list-style: none;}
         img {height: auto; max-width: 100%;} /* 이미지 자체의 비율 유지 */
 
+        /* 고정형으로 계속 사용 */
+        /* .gnb li {display: inline;}
+          .gnb li a {
+                display: inline-block;
+           } */
+
         #menu {
             background-color: rgb(50, 50, 50);
             text-align: center;
         }
         
         .wrap li { display: inline; }
-        
         .wrap li a {
             box-sizing: border-box;
             display: inline-block;
             width: 80px;
             height: 80px;
-            line-height: 80px;
+            line-height: 80px; /* 글자 수평 정렬 */
             color: white;
             text-decoration: none;
             font-size: 15px;
         }
 
         .wrap li a:hover {
-            
             border-bottom: 3px solid white;
         }
 
         .sec {
-            width: 1500px;
-            height: 700px;
-            padding: 50px 80px; 
             margin: 0 auto;
+            width: 1020px;
+            /* margin-top이 아닌 margin:50px을 주면 좌우에 margin이 들어가므로 가운데 정렬이 되지 않음 */
+            margin-top: 50px;
         }
 
         .box {
