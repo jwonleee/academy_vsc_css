@@ -1,0 +1,60 @@
+* {padding: 0; margin: 0; list-style: none;}
+img {max-width: 100%; height: auto;}
+
+.container .row .col-xs-12 h2{
+    font-weight: 550;
+    margin: 30px 0 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(199, 199, 199);
+}
+.container h2 span {
+    font-size: 20px;
+    color: #777;
+}
+
+.product-cont .cont-info {min-height: 340px;}
+.product-cont .cont-info p {
+    border-bottom: 1px solid rgb(199, 199, 199);
+    padding-bottom: 10px;
+}
+.product-cont .cont-info .title {
+    font-size: 25px;
+    font-weight: 500;
+}
+.product-cont .cont-info .price {
+    font-size: 35px;
+    font-weight: 600;
+}
+.product-cont .cont-info .delivery {
+    font-size: 14px;
+    color: #777;
+    font-weight: 600;
+}
+
+.product-cont .buy {
+    overflow: hidden;
+    height: 60px;
+    line-height: 60px;
+}
+.product-cont .buy .left {
+    float: left;
+    font-size: 18px;
+}
+.product-cont .buy .right {
+    float: right;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.product-cont .buy-btn {
+    overflow: hidden;
+}
+.product-cont .buy-btn .btn{
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    border-radius: 0;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 500;
+}

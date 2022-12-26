@@ -207,7 +207,7 @@ img {max-width: 100%; height: auto;}
 }
 
 #section .hot_issue .issue_cont ul li .inner > span{ /* < 바로 아래꺼만  */
-    margin-top: 10px;
+    margin-top: 5px;
     display: block;
 
 }
